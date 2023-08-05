@@ -1,6 +1,46 @@
-
+How to use git:
+1) Create Github account and login
+2) Create token , it is just like passwd
+3) Install git on laptop
+4) Create a remote repo on github account
+5) Create a folder on your laptop
+6) Open folder and open git bash and execute below commands
+	echo "# mygit" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git config --global user.name "gajudevops”
+	git config --global user.email " gajanandevops@gmail.com ”
+	git commit -m "first commit"
+	git branch -M main
+	git remote add origin https://github.com/gajudevops/mygit.git
+	git push -u origin main
+	(Up to here, only one time activity)
+7) For every change, we can do below
+	git add -A
+	git commit -m “comments”
+	git push
 
 git add -A
 git commit -m "comment"
 git push
 
+
+git branch ---> Shows current branch
+
+git checkout <branch_name>  ---> to witch the branch
+
+git checkout -b <branch_name> ---> Create new branch and switch
+
+git push origin <branch_name> ---> to push the code from branch
+
+git merge <branch_name> ---> To merge the <branch_name> with current branch 
+
+
+git restore <file_name> ---> Restore file from working direcyory
+
+git restore --staged <file_name> ---> restore from staging after adding from staging repo
+
+git reset HEAD~1  ------> Restore file after comming from local repo
+
+git revert <commit_id> ----> restore file from remote repo
